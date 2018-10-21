@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<HTML>
+  <HEAD>
+    <META charset="utf-8" />
+    <link res="stylesheet" href="/css/index.css">
+  </HEAD>
+  <BODY>
+    <img id="title" src="/images/title.png">
+    <div id="container">
+      <span class="Card" id="CardOne"><img id="scrape" class="pic" src="/images/scrape.png"></span>
+      <span class="Card" id="CardTwo"><img class="pic" id="quotes" src="/images/quotes.png"></span>
+      <span class="Card" id="CardThree"><img class="pic" id="website" src="/images/website.png"></span>
+    </div>
+
+    <script>
+      document.getElementById("website").addEventListener("click", redirect);
+      document.getElementById("scrape").addEventListener("click", scrape);
+      document.getElementById("quotes").addEventListener("click", quotes);
+
+      function redirect() {
+        window.location.replace("https://www.brainyquote.com/topics/daily");
+      }
+
+      function scrape() {
+        var audio = new Audio('scrape.mp3');
+        audio.play();
+        setTimeout(function() { window.location.href = "https://mongoscraper356.herokuapp.com/scrape"; }, 1000);
+      }
+
+      function quotes() {
+        window.location.href = "https://mongoscraper356.herokuapp.com/quotes";
+      }
+
+    </script>
+  </BODY>
+</HTML>

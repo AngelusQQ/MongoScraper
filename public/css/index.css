@@ -1,0 +1,54 @@
+#container {
+  margin-left:10%;
+  width: 75vw;
+  height: 40vh;
+  margin-top:10vh;
+  /* border: 1px solid black; */
+}
+
+.Card {
+  width: 23vw;
+  height:35vh;
+  display: inline-block;
+  margin-top:2vh;
+}
+
+img {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  /* width: 11.5vw; */
+  width: 16vw;
+}
+
+.pic:hover {
+  opacity:0.5;
+}
+
+.pic:active {
+  width:12vw;
+  margin-top:5vh;
+}
+
+#title {
+  width:auto;
+}
+
+#CardOne {
+}
+
+#CardTwo {
+  margin-left:2.6vw;
+}
+
+#CardThree {
+  margin-left:2.6vw;
+}
+
+#website {
+  margin-top: 10vh;
+}
+
+#quotes {
+  margin-top:3vh;
+}
